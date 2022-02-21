@@ -1,0 +1,18 @@
+name: 'foo'
+description: 'Foo.'
+inputs:
+  param1:
+    description: 'The first parameter.'
+    required: true
+
+  param2:
+    description: 'The second parameter.'
+    required: true
+
+runs:
+  using: "composite"
+  steps:
+    - name: Do foo stuff
+      shell: bash
+      run: |
+        echo ${{ inputs.param1 }} and ${{ inputs.param2 }}
