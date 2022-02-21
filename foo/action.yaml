@@ -15,4 +15,4 @@ runs:
     - name: Do foo stuff
       shell: bash
       run: |
-        echo ${{ inputs.param1 }} and ${{ inputs.param2 }}
+        echo ${{ inputs.param1 }} foo ${{ inputs.param2 }}
